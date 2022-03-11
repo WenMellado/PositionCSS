@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>2.13 Propiedad Position CSS</title>
+</head>
+<body>
+    <header>
+        <div><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M27.52,6.88v13.76h-13.76v144.48h37.84v-30.96h13.76v30.96h37.84v-144.48h-13.76v-13.76zM34.4,34.4h6.88v6.88h-6.88zM48.16,34.4h6.88v6.88h-6.88zM61.92,34.4h6.88v6.88h-6.88zM75.68,34.4h6.88v6.88h-6.88zM110.08,48.16v13.76h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v13.76h48.16v-116.96zM34.4,51.6h6.88v13.76h-6.88zM48.16,51.6h6.88v13.76h-6.88zM61.92,51.6h6.88v13.76h-6.88zM75.68,51.6h6.88v13.76h-6.88zM123.84,61.92h6.88v6.88h-6.88zM137.6,61.92h6.88v6.88h-6.88zM34.4,72.24h6.88v13.76h-6.88zM48.16,72.24h6.88v13.76h-6.88zM61.92,72.24h6.88v13.76h-6.88zM75.68,72.24h6.88v13.76h-6.88zM123.84,75.68h6.88v6.88h-6.88zM137.6,75.68h6.88v6.88h-6.88zM123.84,89.44h6.88v6.88h-6.88zM137.6,89.44h6.88v6.88h-6.88zM34.4,92.88h6.88v13.76h-6.88zM48.16,92.88h6.88v13.76h-6.88zM61.92,92.88h6.88v13.76h-6.88zM75.68,92.88h6.88v13.76h-6.88zM123.84,103.2h6.88v6.88h-6.88zM137.6,103.2h6.88v6.88h-6.88zM34.4,113.52h6.88v13.76h-6.88zM48.16,113.52h6.88v13.76h-6.88zM61.92,113.52h6.88v13.76h-6.88zM75.68,113.52h6.88v13.76h-6.88zM123.84,116.96h6.88v6.88h-6.88zM137.6,116.96h6.88v6.88h-6.88zM123.84,130.72h6.88v6.88h-6.88zM137.6,130.72h6.88v6.88h-6.88zM34.4,134.16h6.88v17.2h-6.88zM75.68,134.16h6.88v17.2h-6.88zM123.84,144.48h6.88v6.88h-6.88zM137.6,144.48h6.88v6.88h-6.88z"></path></g></g></svg></div>
+        <span>Propiedad Position CSS</span>
+    </header>
+    <main>
+        <div class="box a">
+            <div class="box b">
+                <div class="box c">
+                    <div class="circulo_a">
+                        <div class="circulo_b">
+                            <div class="circulo_c">
+                                <div class="circulo_d">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="30" height="30"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M56.0075,0.1075c-0.44344,0.08062 -0.90031,0.16125 -1.29,0.43c-1.57219,1.06156 -1.92156,3.26531 -0.86,4.8375l7.4175,11.0725c-11.46219,6.07375 -20.00844,16.16531 -22.79,28.2725h95.03c-2.78156,-12.10719 -11.32781,-22.19875 -22.79,-28.2725l7.4175,-11.0725c1.06156,-1.57219 0.71219,-3.77594 -0.86,-4.8375c-1.58562,-1.06156 -3.77594,-0.60469 -4.8375,0.9675l-8.17,12.04c-5.67062,-2.06937 -11.825,-3.225 -18.275,-3.225c-6.45,0 -12.60437,1.15563 -18.275,3.225l-8.17,-12.04c-0.79281,-1.1825 -2.23062,-1.65281 -3.5475,-1.3975zM67.08,27.52c2.84875,0 5.16,2.31125 5.16,5.16c0,2.86219 -2.31125,5.16 -5.16,5.16c-2.86219,0 -5.16,-2.29781 -5.16,-5.16c0,-2.84875 2.29781,-5.16 5.16,-5.16zM104.92,27.52c2.86219,0 5.16,2.31125 5.16,5.16c0,2.86219 -2.29781,5.16 -5.16,5.16c-2.84875,0 -5.16,-2.29781 -5.16,-5.16c0,-2.84875 2.31125,-5.16 5.16,-5.16zM27.52,51.6c-5.6975,0 -10.32,4.6225 -10.32,10.32v48.16c0,5.6975 4.6225,10.32 10.32,10.32c1.20938,0 2.365,-0.25531 3.44,-0.645v-67.51c-1.075,-0.38969 -2.23062,-0.645 -3.44,-0.645zM37.84,51.6v75.68c0,5.68406 4.63594,10.32 10.32,10.32h75.68c5.68406,0 10.32,-4.63594 10.32,-10.32v-75.68zM144.48,51.6c-1.20937,0 -2.365,0.25531 -3.44,0.645v67.51c1.075,0.37625 2.23063,0.645 3.44,0.645c5.6975,0 10.32,-4.6225 10.32,-10.32v-48.16c0,-5.6975 -4.6225,-10.32 -10.32,-10.32zM51.6,144.48v13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76v-13.76zM92.88,144.48v13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76v-13.76z"></path></g></g></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <span>Todos los derechos reservados © | M. M. Wendolen C.</span> 
+    </footer>
+</body>
+</html>
